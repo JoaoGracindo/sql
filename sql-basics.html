@@ -1,0 +1,73 @@
+<!--01)
+         For this challenge you need to create a simple SELECT statement 
+         that will return all columns from the people table WHERE their 
+         age is over 50
+
+        people table schema
+        id
+        name
+        age
+        You should return all people fields where their age is over 50 and order
+        by the age descending --> 
+
+        select * from people where age > 50
+        order by age desc;
+
+
+
+
+ <!--02)
+        For this challenge you need to create a simple MIN / MAX
+        statement that will return the Minimum and Maximum ages 
+        out of all the people.
+
+        people table schema
+        id
+        name
+        age-->
+
+        select max(age) as age_max, min(age) as age_min from people;
+
+
+
+
+    <!--03)
+            Using only SQL, write a query that returns all rows in
+            the custid, custname, and custstate columns from the
+            customers table.-->
+
+            select custid, custname, custstate from customers;
+
+
+
+
+    <!--04)
+            You received an invitation to an amazing party. Now you need to write an insert statement to add yourself to the table of participants.
+            participants table schema
+
+            name (string)
+            age (integer)
+            attending (boolean)
+            NOTES:
+
+            Since alcohol will be served, you can only attend if you are 21 or older
+            You can't attend if the attending column returns anything but true-->
+
+            INSERT into participants (
+            name,
+            age,
+            attending)
+            values(
+            'Joao Gabriel Gracindo',
+            24,
+            true);
+
+            SELECT * FROM participants;
+
+
+
+
+    <!--05)
+            -->
+
+
